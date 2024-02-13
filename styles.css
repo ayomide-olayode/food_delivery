@@ -1,0 +1,362 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0 solid #e5e7eb;
+}
+
+body, html{
+    height: 100%;
+}
+.main{
+    justify-content: space-between;
+    flex-direction: column;
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+nav{
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.nav-content{
+    padding-top: 0.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    background-color:#f3ebd3;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    display: flex;
+    flex: 1 1 0%;
+    width: 100%;
+
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.logo{
+    color:white ;
+}
+a img{
+    width: 200px;
+}
+.nav1{
+    align-items: center;
+    display: flex;
+}
+.nav2{
+    column-gap: 40px;
+    flex-shrink: 0;
+    display: flex;
+    margin-left: 20px;
+  
+}
+.nav2 a{
+    color: #27272e;
+    font-size: 25px;
+}
+.nav2 a:hover{
+    text-decoration: underline;
+}
+.nav3{
+    flex: 1 1 0%;
+    width: 60%;
+    display: flex;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.relative{
+    position: relative;
+}
+.searchbar{
+    display: flex;
+    flex: 1 1 0%;
+    width: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.formbar{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    color: #262627;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+.search{
+    border: none;
+    outline: none;
+    box-shadow: none;
+    align-items: center;
+    background-color: #fff;
+    display: flex;
+    line-height: 1em;
+    margin: 0;
+    page-orientation: relative;
+    width: 100%;
+}
+.searchbtn{
+    align-items: center;
+    display: flex;
+    flex-shrink: 0;
+    height: 44px;
+    order: 1;
+}
+label{
+    cursor: auto;
+    flex-shrink: 0;
+    height: 100%;
+    padding: 0;
+    text-align: left;
+
+}
+ button{
+    background-color: transparent;
+    background-image: none;
+    border: none;
+    margin: 0;
+    background: none;
+    cursor: pointer;
+    height: 100%;
+    padding-left: 11px;
+    padding-right: 8px;
+    width: 47px;
+ }
+ .aa-SubmitIcon{
+    fill: #262627;
+    height: auto;
+    max-height: 20px;
+    stroke-width: 1.6;
+    width: 20px;
+ }
+ .inputarea{
+    order: 3;
+    position: relative;
+    width: 100%;
+ }
+ .input{
+    background:none;
+    color: #262627;
+    height: 60px;
+    width: 60%;
+    border: none;
+    border-style: none;
+    outline: none;
+    margin: 0;
+    font-size: 20px;
+ }
+ .cart{
+    cursor: pointer;
+    position: relative;
+    display: flex;
+}
+.cart-icon{
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    display: flex;
+}
+.icon-cart{
+    color: #262627;
+     width: 50px;
+    height: 50px;
+}
+.cart-count{
+    color: #f3ebd3;
+    font-size: .75rem;
+    line-height: 1rem;
+    padding: 5px;
+    background-color: #262627;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    min-width: 20px;
+    height: 20px;
+    display: flex;
+    top: -10px;
+    right: -10px;
+    position: absolute;
+}
+.top{
+    color: white;
+    text-align: center;
+    background-color:#262627;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 38px;
+    display: flex;
+    z-index: 40;
+    position: sticky;
+}
+.top-text{
+    font-size: 25px;
+    font-weight: 500;
+}
+.container {
+    position: relative;
+    width: 100%;
+    height:100vh ; /* Adjust height as needed */
+    background-image: url("img/backg.jpg"); /* Replace 'background-image.jpg' with your image file */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+  }
+  .container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.wrapper {
+    width: 500px;
+    background: white;
+    box-shadow: 4px 8px #7c7878;
+    border: 1px solid transparent;
+    color: #25242a;
+    border-radius: 12px;
+    padding: 30px 40px;
+    position: relative;
+    z-index: 2;
+    backdrop-filter: none; /* Remove blur effect on the form */
+}
+
+.wrapper h1 {
+    font-size: 50px;
+    text-align: center;
+}
+.wrapper p{
+    font-size: 20px;
+    text-align: center;
+}
+.wrapper p span{
+    color: #25242a;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 60px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid #25242a;
+    border-radius: 40px;
+    font-size: 25px;
+    color: #25242a;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+    color: #25242a;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 30%;
+    transform: translate(-50%);
+    font-size: 20px;
+}
+
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label{
+    color: #25242a;
+}
+
+.remember-forgot label input {
+    font-size: 15px;
+    accent-color: #f5efd7;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: #25242a  ;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background: #d3cbb2;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 20px;
+    color: #25242a;
+    font-weight: 600;
+}
+
+.wrapper .btn:hover{
+    background: #25242a;
+    color: #f5efd7;
+}
+
+.wrapper .register-link {
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p{
+    color: #25242a;
+}
+.register-link p a {
+    color: #25242a;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+.login-logo{
+    position: absolute;
+
+    top: 5px; /* Adjust as needed */
+    left: -13px; /* Adjust as needed */
+}
+.logo-login img{
+     width: 270px;   
+}
