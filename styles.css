@@ -5,8 +5,11 @@
     border: 0 solid #e5e7eb;
 }
 
-body, html{
+body, html, a, input, label, h1, p, span{
     height: 100%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .main{
     justify-content: space-between;
@@ -89,6 +92,7 @@ a img{
     font-weight: 400;
     margin: 0;
     padding: 0;
+    
     text-align: left;
 }
 .search{
@@ -146,7 +150,7 @@ label{
     background:none;
     color: #262627;
     height: 60px;
-    width: 60%;
+    width: 100%;
     border: none;
     border-style: none;
     outline: none;
@@ -241,6 +245,12 @@ label{
     z-index: 2;
     backdrop-filter: none; /* Remove blur effect on the form */
 }
+.wrapper-register{
+    width: 30%;
+    top: 20px;
+    bottom: 30px;
+}
+
 
 .wrapper h1 {
     font-size: 50px;
@@ -261,6 +271,9 @@ label{
     width: 100%;
     height: 50px;
     margin: 60px 0;
+}
+.wrapper-register .input-box{
+    margin: 30px 0;
 }
 
 .input-box input {
@@ -300,8 +313,9 @@ label{
 }
 
 .remember-forgot label input {
-    font-size: 15px;
-    accent-color: #f5efd7;
+    height: 17px;
+    width: 20px;
+    accent-color: #25242a;
     margin-right: 3px;
 }
 
@@ -333,6 +347,11 @@ label{
     color: #f5efd7;
 }
 
+.remember-forgot label span a{
+    text-decoration: underline;
+    color: blue;
+}
+
 .wrapper .register-link {
     font-size: 20px;
     text-align: center;
@@ -342,10 +361,10 @@ label{
 .register-link p{
     color: #25242a;
 }
-.register-link p a {
+.register-link p a  {
     color: #25242a;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .register-link p a:hover {
